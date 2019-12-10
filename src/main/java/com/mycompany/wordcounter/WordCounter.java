@@ -39,7 +39,7 @@ public class WordCounter {
             
             final FrequencyAnalyzer frequencyAnalyzer = new FrequencyAnalyzer();
             List<WordFrequency> wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-bad idea.txt");
-            final Dimension dimension = new Dimension(1000, 1000);
+            final Dimension dimension = new Dimension(400, 400);
             final WordCloud wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
             wordCloud.setPadding(0);
             wordCloud.setBackground(new RectangleBackground(dimension));
