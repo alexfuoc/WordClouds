@@ -66,7 +66,25 @@ public void printFrequencyFile(HashMap<String, Integer> song){
 ```
   ### Song Class
  
+ The Song Class holds data for a song, including fields HashMap<String, Integer> songLyrics, String songTitle and HashSet<String> stopwords. The methods include the constructor, Song(String inputFile, String T) to input the song, void printLyrics(HashMap<String, Integer> song) to print the lyrics to the console, and void printLyricsFile(HashMap<String, Integer> song to print the lyrics to the output file. 
+  
   ### Album Class 
+The Album class holds the data for the entire album, including fields int NumOfSongs, NumOfWords, andh HashMap<String, Integer> albumLyrics. The methods include the constructor, Album(Song inputSong, int songIndex) to instantiate the album, addSong(Song inputSong, int songIndex) to input the song objects lyrics into the albumLyrics HashMap<String, Integer>, void printLyricsFile(HashMap<String, Integer> album) to print the lyrics to the output file.
+
+*The Song and Album class fields are denoted as public, this could lead to data corruption and should be assigned private and accessed with getter and setter methods OR given package access, allowing the Album class to utilize the songs fields. They are denoted public so the album class can access the Song classes fields.*
+
+***i.e Album class inputting a Song classes songLyrics HashMap<String, Integer>***
+```java
+inputSong.songLyrics.keySet().forEach((String word) -> {
+            if(albumLyrics.containsKey(word)){
+                albumLyrics.put(word,
+                        inputSong.songLyrics.get(word)+ albumLyrics.get(word));
+            }else{
+                albumLyrics.put(word, inputSong.songLyrics.get(word));
+            }
+        });
+
+```
 
 ## Assignment 4- Word Cloud Visualization website
 
