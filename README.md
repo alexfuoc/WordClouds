@@ -131,3 +131,4 @@ wordCloud.writeToFile("src\\word clouds\\wordcloud_nasa.png");
 
 **2. HTML/CSS and GitHub Pages**
 
+To present the word cloud visualizations, I used GitHub pages to host the [website](https://alexfuoc.github.io/WordClouds/). Building it with HTML and in line CSS. 
