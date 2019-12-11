@@ -128,5 +128,6 @@ wordCloud.writeToFile("src\\word clouds\\wordcloud_nasa.png");
 ![Nasa Image](https://github.com/alexfuoc/WordClouds/blob/master/src/word%20clouds/wordcloud_nasa.png)
 
 
+
 **2. HTML/CSS and GitHub Pages**
 
