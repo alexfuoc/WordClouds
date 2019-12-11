@@ -105,12 +105,12 @@ Using Netbeans IDE allowed for creation of a pom.xml and adding the Kumo reposit
         </dependency>
 ```
 
-***PROBLEMS with Netbeans*** *I had to create a brand new project to access my frequency file outputs, this is because you cannot make a project have maven dependencies through netbeans AFTER you have already created it. This was a severe problem that forced me to create a second project and github repository for assignment 4. This is the link to the assignment 3- frequency file github repo [x](https://github.com/alexfuoc/WordCounterApp)
+***PROBLEMS with Netbeans*** *I had to create a brand new project to access my frequency file outputs, this is because you cannot make a project have maven dependencies through netbeans AFTER you have already created it. This was a severe problem that forced me to create a second project and github repository for assignment 4. This is the link to the assignment 3- frequency file github repo [x](https://github.com/alexfuoc/WordCounterApp)*
 
 #### Creating the Word Clouds-
 I created the word cloud through uploading the frequency files created from the songs in assignment 3 to the frequency analyzer class from the Kumo repository. *There was issues that it counted the frequency number as a word sometimes so it would should 1, or 32 as a word for example. It was formatted correctly so I do not know why it did that. 
 
-*i.e Word Cloud for NASA
+*i.e Word Cloud for NASA*
 ```java
 wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-NASA.txt");
 dimension = new Dimension(450, 450);
@@ -123,7 +123,7 @@ wordCloud.setFontScalar(new LinearFontScalar(15, 55));
 wordCloud.build(wordFrequencies);
 wordCloud.writeToFile("src\\word clouds\\wordcloud_nasa.png");
 ```
-*i.e Output for NASA
+*i.e Output for NASA*
 
 ![Nasa Image](https://github.com/alexfuoc/WordClouds/blob/master/src/word%20clouds/wordcloud_nasa.png)
 
