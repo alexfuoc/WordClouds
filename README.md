@@ -1,7 +1,7 @@
 # Word Cloud Project
 Assignment 3 and 4 for CISC 3130- Data Structures. 
 
-## Assignment 3 Objective- Word Frequencies
+## Assignment 3 Objective- Word Frequencies [x](https://github.com/alexfuoc/WordCounterApp)
 Analyze a song for the frequency of word used by song utlizing different data structures.
   
   **1. Prepare a text file that contains text to analyze.**
@@ -54,7 +54,7 @@ public void printFrequencyFile(HashMap<String, Integer> song){
 }   
  ```
  
- *Example Output File, thank u, next*
+ *i.e Output File, thank u, next*
 ```
 42: next
 38: you
@@ -89,6 +89,43 @@ inputSong.songLyrics.keySet().forEach((String word) -> {
 ## Assignment 4- Word Cloud Visualization website
 
 **1. Word Clouds - Kumo Maven Repository**
+
+Using the Kumo repository allowed for the creation of a word cloud based on the frequency file created on the song lyrics. This allowed for easy upload of the text file to an image output. This was done using the [Kumo](https://github.com/kennycason/kumo) repository through Maven.
+
+#### Connecting through Maven-
+Using Netbeans IDE allowed for creation of a pom.xml and adding the Kumo repository seamlessly. Creating a new Maven java project allowed me to have the Kumo repositiory as a dependency. I did not need to add all of the dependencies that Kumo uses because it accessed it through the Kumo pom.xml. 
+
+```java
+ <!-- https://mvnrepository.com/artifact/com.kennycason/kumo -->
+        <dependency>
+            <groupId>com.kennycason</groupId>
+            <artifactId>kumo</artifactId>
+            <version>1.8</version>
+            <type>jar</type>
+        </dependency>
+```
+
+***PROBLEMS with Netbeans*** *I had to create a brand new project to access my frequency file outputs, this is because you cannot make a project have maven dependencies through netbeans AFTER you have already created it. This was a severe problem that forced me to create a second project and github repository for assignment 4. This is the link to the assignment 3- frequency file github repo [x](https://github.com/alexfuoc/WordCounterApp)
+
+#### Creating the Word Clouds-
+I created the word cloud through uploading the frequency files created from the songs in assignment 3 to the frequency analyzer class from the Kumo repository. *There was issues that it counted the frequency number as a word sometimes so it would should 1, or 32 as a word for example. It was formatted correctly so I do not know why it did that. 
+
+*i.e Word Cloud for NASA
+```java
+wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-NASA.txt");
+dimension = new Dimension(450, 450);
+wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
+wordCloud.setPadding(2);
+wordCloud.setBackground(new CircleBackground(225));
+wordCloud.setColorPalette(new ColorPalette(new Color(0x4055F1), 
+  new Color(0x408DF1), new Color(0x40AAF1), new Color(0x40C5F1)));
+wordCloud.setFontScalar(new LinearFontScalar(15, 55));
+wordCloud.build(wordFrequencies);
+wordCloud.writeToFile("src\\word clouds\\wordcloud_nasa.png");
+```
+*i.e Output for NASA
+
+![Nasa Image](https://github.com/alexfuoc/WordClouds/blob/master/src/word%20clouds/wordcloud_nasa.png)
 
 
 **2. HTML/CSS and GitHub Pages**
