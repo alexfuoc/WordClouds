@@ -9,10 +9,48 @@ and open the template in the editor.
         <title>Word Clouds</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            header {
+                color: white;
+                text-align: center;
+                background-color: rgba(180, 180, 180, 0.9);
+            }
+            body {
+                background-image: url("TUNbackground.png");
+                color: white;
+            }
+            h5{
+                background-color: rgb(255, 196, 194);
+            }
+            video{
+                width: auto;
+                height: auto;
+            }
+            a:link {
+                text-decoration: none;
+                color: white;
+            }
+
+            a:visited {
+                text-decoration: none;
+                color: pink;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: purple;
+            }
+
+            a:active {
+                text-decoration: underline;
+                color: black;
+            }
+            
+        </style>
     </head>
     <body>
         <header>
-            <h1>Word Clouds Visualization of Ariana Grande</h1>
+            <h1>Word Cloud Visualization of Ariana Grande</h1>
             <h3>Using songs from the album thank u, next(2019)</h3>
         </header>
         <section>
@@ -22,19 +60,23 @@ and open the template in the editor.
                 <li>Used a maven repository, Kumo library</li>
                 <li>Used the album thank u, next</li>
             </ul>
-            
+
             <h5>Problems Faced</h5>
             <ul>
                 <li>Creating a Maven project after already started.</li>
                 <li>The maven library using the frequency file</li>
             </ul>
         </section>
-            
-        <section>
+
+        <div>
+            <video controls autoplay>
+                <source src="Ari_tiktok.mp4" type ="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <div>
             <h5>List of Songs</h5>
-            
-            <ul>
-            </ul>
             <a href="#imagine"> 1. imagine</a>
             <a href="#needy"> 2. needy</a>
             <a href="#NASA"> 3. NASA</a>
@@ -47,92 +89,92 @@ and open the template in the editor.
             <a href="#7rings"> 10. 7 rings</a>
             <a href="#thankunext"> 11. thank u, next</a>
             <a href="#breakup"> 12. break up with your girlfriend, im bored</a>
-            
-            
-        </section>
-        
-        <section id="imagine">
-            <h5>imagine</h5>
-            <img src="src\word clouds\wordcloud_imagine.png" 
-                 alt="imagine word cloud visualization">
+        </div>
 
-        </section>
-                
-        <section id="needy">
-            <h5>needy</h5>
-            <img src="src\word clouds\wordcloud_needy.png" 
-                 alt="needy word cloud visualization">
 
-        </section>
-                
-        <section id="NASA">
-            <h5>NASA</h5>
-            <img src="src\word clouds\wordcloud_nasa.png" 
-                 alt="NASA word cloud visualization">
+ 
+    <section id="imagine">
+        <h5>imagine</h5>
+        <img src="src\word clouds\wordcloud_imagine.png" 
+             alt="imagine word cloud visualization">
 
-        </section>
-                
-        <section id="bloodline">
-            <h5>bloodline</h5>
-            <img src="src\word clouds\wordcloud_bloodline.png" 
-                 alt="bloodline word cloud visualization">
+    </section>
 
-        </section>
-                
-        <section id="fakesmile">
-            <h5>fake smile</h5>
-            <img src="src\word clouds\wordcloud_fakesmile.png" 
-                 alt="fake smile word cloud visualization">
+    <section id="needy">
+        <h5>needy</h5>
+        <img src="src\word clouds\wordcloud_needy.png" 
+             alt="needy word cloud visualization">
 
-        </section>
-                
-        <section id="badidea">
-            <h5>bad idea</h5>
-            <img src="src\word clouds\wordcloud_badidea.png" 
-                 alt="bad idea word cloud visualization">
+    </section>
 
-        </section>
-                
-        <section id="makeup">
-            <h5>make up</h5>
-            <img src="src\word clouds\wordcloud_makeup.png" 
-                 alt="make up word cloud visualization">
+    <section id="NASA">
+        <h5>NASA</h5>
+        <img src="src\word clouds\wordcloud_nasa.png" 
+             alt="NASA word cloud visualization">
 
-        </section>
-                
-        <section id="ghostin">
-            <h5>ghostin</h5>
-            <img src="src\word clouds\wordcloud_ghostin.png" 
-                 alt="ghostin word cloud visualization">
+    </section>
 
-        </section>
-                
-        <section id="inmyhead">
-            <h5>in my head</h5>
-            <img src="src\word clouds\wordcloud_inmyhead.png" 
-                 alt="in my head word cloud visualization">
+    <section id="bloodline">
+        <h5>bloodline</h5>
+        <img src="src\word clouds\wordcloud_bloodline.png" 
+             alt="bloodline word cloud visualization">
 
-        </section>
-        
-        <section id="7rings">
-            <h5>7 Rings</h5>
-            <img src="src\word clouds\wordcloud_7rings.png" 
-                 alt="7 rings word cloud visualization">
+    </section>
 
-        </section>
-        <section id="thankunext">
-            <h5>thank u, next</h5>
-            <img src="src\word clouds\wordcloud_thank u, next.png" 
-                 alt="thank u, next word cloud visualization">
+    <section id="fakesmile">
+        <h5>fake smile</h5>
+        <img src="src\word clouds\wordcloud_fakesmile.png" 
+             alt="fake smile word cloud visualization">
 
-        </section>
-        
-        <section id="breakup">
-            <h5>break up with your girlfriend, im bored </h5>
-            <img src="src\word clouds\wordcloud_breakup.png" 
-                 alt="break up with your girlfriend, im bored word cloud visualization">
+    </section>
 
-        </section>
-          
-    </body>
+    <section id="badidea">
+        <h5>bad idea</h5>
+        <img src="src\word clouds\wordcloud_badidea.png" 
+             alt="bad idea word cloud visualization">
+
+    </section>
+
+    <section id="makeup">
+        <h5>make up</h5>
+        <img src="src\word clouds\wordcloud_makeup.png" 
+             alt="make up word cloud visualization">
+
+    </section>
+
+    <section id="ghostin">
+        <h5>ghostin</h5>
+        <img src="src\word clouds\wordcloud_ghostin.png" 
+             alt="ghostin word cloud visualization">
+
+    </section>
+
+    <section id="inmyhead">
+        <h5>in my head</h5>
+        <img src="src\word clouds\wordcloud_inmyhead.png" 
+             alt="in my head word cloud visualization">
+
+    </section>
+
+    <section id="7rings">
+        <h5>7 Rings</h5>
+        <img src="src\word clouds\wordcloud_7rings.png" 
+             alt="7 rings word cloud visualization">
+
+    </section>
+    <section id="thankunext">
+        <h5>thank u, next</h5>
+        <img src="src\word clouds\wordcloud_thank u, next.png" 
+             alt="thank u, next word cloud visualization">
+
+    </section>
+
+    <section id="breakup">
+        <h5>break up with your girlfriend, im bored </h5>
+        <img src="src\word clouds\wordcloud_breakup.png" 
+             alt="break up with your girlfriend, im bored word cloud visualization">
+
+    </section>
+
+</body>
 </html>
