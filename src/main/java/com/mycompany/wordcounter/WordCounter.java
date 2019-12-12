@@ -44,7 +44,7 @@ public class WordCounter {
         frequencyAnalyzer.setMinWordLength(1);
         
         //7 Rings
-        List<WordFrequency> wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-7 rings.txt");
+        List<WordFrequency> wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\7 rings.txt");
         Dimension dimension = new Dimension(450, 450);
         WordCloud wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
         wordCloud.setPadding(2);
@@ -55,7 +55,7 @@ public class WordCounter {
         wordCloud.writeToFile("src\\word clouds\\wordcloud_7rings.png");
 
         //NASA
-        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-NASA.txt");
+        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\NASA.txt");
         dimension = new Dimension(450, 450);
         wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
         wordCloud.setPadding(2);
@@ -66,7 +66,7 @@ public class WordCounter {
         wordCloud.writeToFile("src\\word clouds\\wordcloud_nasa.png");
         
         //bad idea
-        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-bad idea.txt");
+        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\bad idea.txt");
         dimension = new Dimension(450, 450);
         wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
         wordCloud.setPadding(2);
@@ -77,7 +77,7 @@ public class WordCounter {
         wordCloud.writeToFile("src\\word clouds\\wordcloud_badidea.png");
         
         //bloodline
-        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-bloodline.txt");
+        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\bloodline.txt");
         dimension = new Dimension(450, 450);
         wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
         wordCloud.setPadding(2);
@@ -88,7 +88,7 @@ public class WordCounter {
         wordCloud.writeToFile("src\\word clouds\\wordcloud_bloodline.png");
         
         //break up with your girlfriend, im bored
-        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-break up with your girlfriend, im bored.txt");
+        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\break up with your girlfriend, im bored.txt");
         dimension = new Dimension(450, 450);
         wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
         wordCloud.setPadding(2);
@@ -99,7 +99,7 @@ public class WordCounter {
         wordCloud.writeToFile("src\\word clouds\\wordcloud_breakup.png");
         
         //fake smile
-        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-fake smile.txt");
+        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\fake smile.txt");
         dimension = new Dimension(450, 450);
         wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
         wordCloud.setPadding(2);
@@ -110,7 +110,7 @@ public class WordCounter {
         wordCloud.writeToFile("src\\word clouds\\wordcloud_fakesmile.png");
         
         //ghostin
-        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-ghostin.txt");
+        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\ghostin.txt");
         dimension = new Dimension(450, 450);
         wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
         wordCloud.setPadding(2);
@@ -121,7 +121,7 @@ public class WordCounter {
         wordCloud.writeToFile("src\\word clouds\\wordcloud_ghostin.png");
         
         //imagine
-        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-imagine.txt");
+        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\imagine.txt");
         dimension = new Dimension(450, 450);
         wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
         wordCloud.setPadding(2);
@@ -132,7 +132,7 @@ public class WordCounter {
         wordCloud.writeToFile("src\\word clouds\\wordcloud_imagine.png");
         
         //in my head
-        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-in my head.txt");
+        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\in my head.txt");
         dimension = new Dimension(450, 450);
         wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
         wordCloud.setPadding(2);
@@ -140,10 +140,10 @@ public class WordCounter {
         wordCloud.setColorPalette(new ColorPalette(new Color(0x4055F1), new Color(0x408DF1), new Color(0x40AAF1), new Color(0x40C5F1)));
         wordCloud.setFontScalar(new LinearFontScalar(15, 55));
         wordCloud.build(wordFrequencies);
-        wordCloud.writeToFile("src\\word clouds\\wordcloud_inmyhead.png");
+        wordCloud.writeToFile("src\\word clouds\\wordcloud_inmyhead2.png");
         
         //make up 
-        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-make up.txt");
+        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\make up.txt");
         dimension = new Dimension(450, 450);
         wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
         wordCloud.setPadding(2);
@@ -154,7 +154,7 @@ public class WordCounter {
         wordCloud.writeToFile("src\\word clouds\\wordcloud_makeup.png");
         
         //needy
-        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-needy.txt");
+        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\needy.txt");
         dimension = new Dimension(450, 450);
         wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
         wordCloud.setPadding(2);
@@ -165,7 +165,7 @@ public class WordCounter {
         wordCloud.writeToFile("src\\word clouds\\wordcloud_needy.png");
         
         //thank u, next
-        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-thank u, next.txt");
+        wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\thank u, next.txt");
         dimension = new Dimension(450, 450);
         wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
         wordCloud.setPadding(2);
@@ -174,6 +174,7 @@ public class WordCounter {
         wordCloud.setFontScalar(new LinearFontScalar(15, 55));
         wordCloud.build(wordFrequencies);
         wordCloud.writeToFile("src\\word clouds\\wordcloud_thank u, next.png");
+        
     }
 
 }
