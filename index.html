@@ -7,6 +7,8 @@ and open the template in the editor.
 <html>
     <head>
         <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+
 
         <title>Word Clouds</title>
         <meta charset="UTF-8">
@@ -30,15 +32,21 @@ and open the template in the editor.
                 width: 50%;
                 
             }
+            .center{
+                text-align: center;
+            }
             
             #rightcol {
                 float: right;
                 width: 50%;
             }
 
-            h5{
-                background-color: rgb(255, 196, 194);
-            }
+            
+            h4 {
+               background-color: rgb(255, 196, 194);
+               text-align: center;
+            } 
+                
             video{
                 width: auto;
                 height: auto;
@@ -74,8 +82,9 @@ and open the template in the editor.
             <h1>Word Cloud Visualization of Ariana Grande</h1>
             <h3>Using songs from the album thank u, next(2019)</h3>
         </header>
+        
         <div id="leftcol">
-            <h4>Creation of the Word Clouds</h4>
+            <h4 class="center">Creation of the Word Clouds</h4>
             <ul>
                 <li>Created a word counter app</li>
                 <li>Used a maven repository, Kumo library</li>
@@ -83,6 +92,7 @@ and open the template in the editor.
             </ul>
 
         </div>
+
         <div id="rightcol">
             <h4>Problems Faced</h4>
             <ul>
@@ -91,15 +101,13 @@ and open the template in the editor.
             </ul> 
         </div>
 
-        <div>
-            <video controls autoplay preload>
-                <source src="Ari_tiktok.mp4" type ="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-        </div>
+        <video controls autoplay preload>
+            <source src="Ari_tiktok.mp4" type ="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
 
         <div>
-            <h5>List of Songs</h5>
+            <h4>List of Songs</h4>
             <a href="#imagine"> 1. imagine</a>
             <a href="#needy"> 2. needy</a>
             <a href="#NASA"> 3. NASA</a>
@@ -115,88 +123,83 @@ and open the template in the editor.
         </div>
 
 
-        <section id="imagine">
-            <h5>imagine</h5>
+        <div id="imagine">
+            <h4>imagine</h4>
             <img src="src\word clouds\wordcloud_imagine.png" 
                  alt="imagine word cloud visualization">
 
-        </section>
+        </div>
 
-        <section id="needy">
-            <h5>needy</h5>
+        <div id="needy">
+            <h4>needy</h4>
             <img src="src\word clouds\wordcloud_needy.png" 
                  alt="needy word cloud visualization">
+        </div>
 
-        </section>
-
-        <section id="NASA">
-            <h5>NASA</h5>
+        <div id="NASA">
+            <h4>NASA</h4>
             <img src="src\word clouds\wordcloud_nasa.png" 
                  alt="NASA word cloud visualization">
 
-        </section>
+        </div>
 
-        <section id="bloodline">
-            <h5>bloodline</h5>
+        <div id="bloodline">
+            <h4>bloodline</h4>
             <img src="src\word clouds\wordcloud_bloodline.png" 
                  alt="bloodline word cloud visualization">
 
-        </section>
+        </div>
 
-        <section id="fakesmile">
-            <h5>fake smile</h5>
+        <div id="fakesmile">
+            <h4>fake smile</h4>
             <img src="src\word clouds\wordcloud_fakesmile.png" 
                  alt="fake smile word cloud visualization">
 
-        </section>
+        </div>
 
-        <section id="badidea">
-            <h5>bad idea</h5>
+        <div id="badidea">
+            <h4>bad idea</h4>
             <img src="src\word clouds\wordcloud_badidea.png" 
                  alt="bad idea word cloud visualization">
 
-        </section>
+        </div>
 
-        <section id="makeup">
-            <h5>make up</h5>
+        <div id="makeup">
+            <h4>make up</h4>
             <img src="src\word clouds\wordcloud_makeup.png" 
                  alt="make up word cloud visualization">
 
-        </section>
+        </div>
 
-        <section id="ghostin">
-            <h5>ghostin</h5>
+        <div id="ghostin">
+            <h4>ghostin</h4>
             <img src="src\word clouds\wordcloud_ghostin.png" 
                  alt="ghostin word cloud visualization">
 
-        </section>
+        </div>
 
-        <section id="inmyhead">
-            <h5>in my head</h5>
+        <div id="inmyhead">
+            <h4>in my head</h4>
             <img src="src\word clouds\wordcloud_inmyhead.png" 
                  alt="in my head word cloud visualization">
+        </div>
 
-        </section>
-
-        <section id="7rings">
-            <h5>7 Rings</h5>
+        <div id="7rings">
+            <h4>7 Rings</h4>
             <img src="src\word clouds\wordcloud_7rings.png" 
                  alt="7 rings word cloud visualization">
-
-        </section>
-        <section id="thankunext">
-            <h5>thank u, next</h5>
+        </div>
+        
+        <div id="thankunext">
+            <h4>thank u, next</h4>
             <img src="src\word clouds\wordcloud_thank u, next.png" 
                  alt="thank u, next word cloud visualization">
+        </div>
 
-        </section>
-
-        <section id="breakup">
-            <h5>break up with your girlfriend, im bored </h5>
+        <div id="breakup">
+            <h4>break up with your girlfriend, im bored </h4>
             <img src="src\word clouds\wordcloud_breakup.png" 
                  alt="break up with your girlfriend, im bored word cloud visualization">
-
-        </section>
-
+        </div>
     </body>
 </html>
