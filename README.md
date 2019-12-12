@@ -29,11 +29,11 @@ Using Netbeans IDE allowed for creation of a pom.xml and adding the Kumo reposit
 ***PROBLEMS with Netbeans*** *I had to create a brand new project to access my frequency file outputs, this is because you cannot make a project have maven dependencies through netbeans AFTER you have already created it. This was a severe problem that forced me to create a second project and github repository for assignment 4. This is the link to the assignment 3- frequency file github repo [x](https://github.com/alexfuoc/WordCounterApp)*
 
 #### Creating the Word Clouds-
-I created the word cloud through uploading the frequency files created from the songs in assignment 3 to the frequency analyzer class from the Kumo repository. *There was issues that it counted the frequency number as a word sometimes so it would should 1, or 32 as a word for example. It was formatted correctly so I do not know why it did that. 
+I created the word cloud through uploading the lyric files used in assignment 3. I did **NOT** use the output from assignment 3 because the FrequencyFileAnalyzer class was not available in the repository anymore. *There was issues that it counted the frequency number as a word sometimes so it would should 1, or 32 as a word for example. It was formatted correctly so I do not know why it did that. After using the correct class of frequencyAnalyzer and using the not analyzed text file I got the correct output
 
 *i.e Word Cloud for NASA*
 ```java
-wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\Output-NASA.txt");
+wordFrequencies = frequencyAnalyzer.load("src\\thank u, next\\NASA.txt");
 dimension = new Dimension(450, 450);
 wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE);
 wordCloud.setPadding(2);
