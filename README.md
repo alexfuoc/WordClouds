@@ -52,4 +52,77 @@ wordCloud.writeToFile("src\\word clouds\\wordcloud_nasa.png");
 
 **2. HTML/CSS and GitHub Pages**
 
-To present the word cloud visualizations, I used GitHub pages to host the [website](https://alexfuoc.github.io/WordClouds/). Building it with HTML and in line CSS. 
+To present the word cloud visualizations, I used GitHub pages to host the [website](https://alexfuoc.github.io/WordClouds/). Building it with HTML and CSS. 
+
+#### HTML
+
+* Video 
+  
+  Added a tiktok featuring the song boyfriend by social house ft Ariana Grande. Had to link from a google drive because github did not support that high quality of videos.
+  ```html
+  <video controls autoplay preload>
+    <source src="https://drive.google.com/uc?export=download&id=18ToEUNSxx8XOjpFUsBX1eeSfhpeQr8QE" type ="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  ```
+  
+* Song Links to Word Clouds 
+  
+  Added links to the location on the page of each tracks word cloud. 
+  
+  *Listed and linked the songs*
+  ```html
+  <a href="#imagine"> 1. imagine</a><br>
+  ```
+  
+  *Put the songs and word clouds in track order*
+  ```html
+  <div id="imagine">
+   <h4>imagine</h4>
+   <img src="src\word clouds\wordcloud_imagine.png" 
+        alt="imagine word cloud visualization">
+  </div>
+  ```
+  
+#### CSS
+
+* Header 
+  
+  Used to have the header continue to stay at the top when scrolling
+  ```css
+  header {
+   color: white;
+   text-align: center;
+   background-color: rgba(180, 180, 180, 0.9);
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+  }
+  ```
+* Background
+  
+   Used the thank u, next album artwork as a background, having it automatically repeat horizontally and vertically.
+  ```css
+  body {
+   background-image: url("TUNbackground.png");
+   color: white;
+  }
+  ```
+  
+* Links
+
+  Specified link changes based on the state, of visited or hovered or active.
+  ```css
+  a:link {
+   text-decoration: none;
+   color: white;
+  }
+  a:visited {
+   text-decoration: none;
+   color: purple;
+  }
+  a:hover {
+   text-decoration: underline;
+   color: pink;
+  }
+  ```
